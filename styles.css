@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #bbc6fa;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.quote__container {
+  width: 100%;
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.quote__heading {
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.quote__heading::after {
+  content: "";
+  width: 7.5rem;
+  height: 0.3rem;
+  border-radius: 0.3rem;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#quote__content {
+  font-size: 2.6rem;
+  min-height: 11rem;
+  margin-bottom: 1rem;
+}
+#quote__content::before,
+#quote__content::after {
+  content: '"';
+}
+
+#quote__author {
+  display: block;
+  float: right;
+  position: relative;
+  font-size: 2.1rem;
+}
+#quote__author::before {
+  content: "";
+  width: 2rem;
+  height: 0.2rem;
+  background: rgb(23, 124, 228);
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+.btn-group {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  outline: none;
+  border: 1px solid rgb(23, 124, 229);
+  background: rgb(23, 124, 229);
+  color: #fff;
+  width: 15rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 2.5rem;
+  font-size: 1.8rem;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:nth-child(2) img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+.btn:nth-child(2) {
+  background: transparent;
+  color: #333;
+}
